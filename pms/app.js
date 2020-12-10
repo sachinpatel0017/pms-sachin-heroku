@@ -9,6 +9,8 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+var server = require('http').createServer(app);
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -36,6 +38,11 @@ app.use(function(err, req, res, next) {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+});
+
+app.use(function(req, res, next) {
+  var reqType = req.headers["x-forwarded-proto"];
+  reqType == 'https' ? next() : res.redirect("https://" + req.headers.host + req.url);
 });
 
 module.exports = app;
