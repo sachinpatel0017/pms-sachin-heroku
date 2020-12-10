@@ -1,0 +1,105 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+padding: 0;
+margin: 0px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#backgroundImage {
+  background-color: khaki;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9;
+  filter:alpha(opacity=40);
+  height:100%;
+  width:100%;
+  z-index:0.1;
+}
+#title_pms
+{
+  color: white;
+}
+
+
+.search-job
+{
+    padding: 5px 0;
+    margin: 0;
+    background-color: midnightblue; 
+}
+
+
+.search-job .btn-primary
+{
+    border-radius: 0;
+    box-shadow: none !important;
+    border: none;
+    display: inline-flex;
+    margin: 5px;
+    padding: 5px 20px;
+}
+.banner
+{
+    color:wheat;
+}
+#log_btn
+{
+  color: orange;
+}
+#sign_btn
+{
+  color: orange;
+}
+
+
+.mydivs{
+
+  border: 2px solid blue;
+  margin: 5px;
+  padding: 10px;
+}
+
+.p1
+{
+  color:white;
+text-align: justify;
+text-emphasis: none;
+  
+}
+
+#seconddiv {
+  visibility: hidden;
+  
+}
+
+#thirddiv {
+  visibility: hidden;
+}
+ 
+.index-bg
+{
+  background-color: darkseagreen;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9;
+  filter:alpha(opacity=40);
+  height:100%;
+  width:100%;
+  z-index:0.1;
+}
+
+.loginKeBad
+{
+  background-color: cornsilk;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.9;
+  filter:alpha(opacity=40);
+  height:100%;
+  width:100%;
+  z-index:0.1;
+}
