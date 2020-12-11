@@ -10,13 +10,15 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 var isProduction = process.env.NODE_ENV === 'production';
-var port = isProduction ? process.env.PORT : 3000;
+var port = isProduction ? process.env.PORT : 2000;
 
 app.get("/", function(req, res) {
   res.render("index");
    });
 
-
+     // start the server listening for requests
+app.listen(process.env.PORT || 2000, 
+  () => console.log("Server is running...on port 2000"));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -47,6 +49,6 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-var port = process.env.PORT || 3000
+var port = process.env.PORT || 2000
 
 module.exports = app;
