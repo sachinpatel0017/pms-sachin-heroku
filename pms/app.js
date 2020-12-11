@@ -13,6 +13,9 @@ app.get("/", function(req, res) {
   res.render("index");
    });
 
+app.listen(process.env.PORT || 2000, 
+	() => console.log("Server is running...on port 2000"));
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
